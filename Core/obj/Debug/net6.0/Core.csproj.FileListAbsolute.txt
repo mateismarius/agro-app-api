@@ -1,0 +1,24 @@
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\bin\Debug\net6.0\Core.deps.json
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\bin\Debug\net6.0\Core.dll
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\bin\Debug\net6.0\Core.pdb
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\Core.dll
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\ref\Core.dll
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\Core.pdb
+C:\Users\matei\OneDrive\Documents\Development\Net Development\AgroExchange\Core\obj\Debug\net6.0\refint\Core.dll
+C:\marius\development\AgroExchange\Core\bin\Debug\net6.0\Core.deps.json
+C:\marius\development\AgroExchange\Core\bin\Debug\net6.0\Core.dll
+C:\marius\development\AgroExchange\Core\bin\Debug\net6.0\Core.pdb
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\Core.csproj.AssemblyReference.cache
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\Core.AssemblyInfoInputs.cache
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\Core.AssemblyInfo.cs
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\Core.csproj.CoreCompileInputs.cache
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\Core.dll
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\refint\Core.dll
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\Core.pdb
+C:\marius\development\AgroExchange\Core\obj\Debug\net6.0\ref\Core.dll
