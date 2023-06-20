@@ -11,11 +11,11 @@ namespace API.Controllers
     public class ProductController : BaseApiController
     {
         private readonly IGenericRepository<Product> _productRepository;
-        private readonly IGenericRepository<ProductBrand> _brandsRepository;
+        private readonly IGenericRepository<Category> _brandsRepository;
         private readonly IGenericRepository<ProductType> _typeRepository;
         private readonly IMapper _mapper;
         public ProductController(IGenericRepository<Product> productRepository, IMapper mapper, 
-                                IGenericRepository<ProductBrand> brandRepository,
+                                IGenericRepository<Category> brandRepository,
                                 IGenericRepository<ProductType> typeRepository)
         {
             _productRepository = productRepository;
@@ -61,7 +61,7 @@ namespace API.Controllers
 
         // This endpoint retrieves a list of all product brands.
         [HttpGet("/products/brands")]
-        public async Task<ActionResult<ProductBrand>> GetProductBrands()
+        public async Task<ActionResult<Category>> GetCategorys()
         {
             // Fetch all product brands
             var brands = await _brandsRepository.ListAllAsync();
@@ -72,7 +72,7 @@ namespace API.Controllers
 
         // This endpoint retrieves a list of all product types.
         [HttpGet("/products/types")]
-        public async Task<ActionResult<ProductBrand>> GetProductTypes()
+        public async Task<ActionResult<Category>> GetProductTypes()
         {
             // Fetch all product types
             var types = await _typeRepository.ListAllAsync();

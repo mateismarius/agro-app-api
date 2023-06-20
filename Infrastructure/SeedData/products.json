@@ -5,7 +5,7 @@
     "Price": 200,
     "PictureUrl": "images/products/tomatoes.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "CategoryId": 1
   },
   {
     "Name": "Castraveti cornison",
@@ -13,7 +13,7 @@
     "Price": 150,
     "PictureUrl": "images/products/cucumber.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "CategoryId": 2
   },
   {
     "Name": "Ardei gras",
@@ -21,7 +21,7 @@
     "Price": 180,
     "PictureUrl": "images/products/pepper.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 3
+    "CategoryId": 3
   },
   {
     "Name": "Lapte de vaca",
@@ -29,7 +29,7 @@
     "Price": 300,
     "PictureUrl": "images/products/milk.jpg",
     "ProductTypeId": 5,
-    "ProductBrandId": 4
+    "CategoryId": 4
   },
   {
     "Name": "Branza de vaca",
@@ -37,7 +37,7 @@
     "Price": 250,
     "PictureUrl": "images/products/cheese.jpg",
     "ProductTypeId": 5,
-    "ProductBrandId": 5
+    "CategoryId": 5
   },
   {
     "Name": "Morcovi",
@@ -45,7 +45,7 @@
     "Price": 120,
     "PictureUrl": "images/products/carrot.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 6
+    "CategoryId": 6
   },
   {
     "Name": "Ridichii",
@@ -53,7 +53,7 @@
     "Price": 10,
     "PictureUrl": "images/products/ridichii.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 7
+    "CategoryId": 7
   },
   {
     "Name": "Ceapa",
@@ -61,7 +61,7 @@
     "Price": 8,
     "PictureUrl": "images/products/onions.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 8
+    "CategoryId": 8
   },
   {
     "Name": "Spanac",
@@ -69,7 +69,7 @@
     "Price": 15,
     "PictureUrl": "images/products/spinach.jpg",
     "ProductTypeId": 1,
-    "ProductBrandId": 9
+    "CategoryId": 9
   },
   {
     "Name": "Oua",
@@ -77,7 +77,7 @@
     "Price": 18,
     "PictureUrl": "images/products/eggs.jpg",
     "ProductTypeId": 4,
-    "ProductBrandId": 10
+    "CategoryId": 10
   },
   {
     "Name": "Carne de vita",
@@ -85,7 +85,7 @@
     "Price": 15,
     "PictureUrl": "images/products/beef_meet.jpg",
     "ProductTypeId": 3,
-    "ProductBrandId": 11
+    "CategoryId": 11
   },
   {
     "Name": "Carne de miel",
@@ -93,7 +93,7 @@
     "Price": 16,
     "PictureUrl": "images/products/lamb_meat.jpg",
     "ProductTypeId": 3,
-    "ProductBrandId": 12
+    "CategoryId": 12
   },
   {
     "Name": "Carne de curcan",
@@ -101,7 +101,7 @@
     "Price": 14,
     "PictureUrl": "images/products/turkey_meat.jpg",
     "ProductTypeId": 3,
-    "ProductBrandId": 13
+    "CategoryId": 13
   },
   {
     "Name": "Carne de pui",
@@ -109,7 +109,7 @@
     "Price": 250,
     "PictureUrl": "images/products/chicken_meat.jpg",
     "ProductTypeId": 3,
-    "ProductBrandId": 14
+    "CategoryId": 14
   }
 
 ]

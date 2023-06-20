@@ -25,8 +25,12 @@ namespace Infrastructure.AppContext
         }
 
         public DbSet<Product>? Products { get; set; }
-        public DbSet<ProductBrand>? ProductBrands { get; set; }
+        public DbSet<Category>? Categorys { get; set; }
         public DbSet<ProductType>? ProductTypes { get; set; }
+        public DbSet<FarmerProfile>? FarmerProfiles { get; set; }
+        public DbSet<FarmerReview>? FarmerReviews { get; set; }
+        public DbSet<ProductReview>? ProductReviews { get; set; }
+        public DbSet<ReviewProps>? ReviewProps { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

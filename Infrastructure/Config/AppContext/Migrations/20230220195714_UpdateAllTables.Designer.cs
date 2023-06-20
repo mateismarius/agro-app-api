@@ -54,7 +54,7 @@ namespace Infrastructure.AppContext.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("ProductBrandId")
+                    b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
                     b.Property<int>("ProductTypeId")
@@ -62,14 +62,14 @@ namespace Infrastructure.AppContext.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductBrandId");
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("ProductTypeId");
 
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("Core.Entities.ProductBrand", b =>
+            modelBuilder.Entity("Core.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -89,7 +89,7 @@ namespace Infrastructure.AppContext.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProductBrands");
+                    b.ToTable("Categorys");
                 });
 
             modelBuilder.Entity("Core.Entities.ProductType", b =>
@@ -117,9 +117,9 @@ namespace Infrastructure.AppContext.Migrations
 
             modelBuilder.Entity("Core.Entities.Product", b =>
                 {
-                    b.HasOne("Core.Entities.ProductBrand", "ProductBrand")
+                    b.HasOne("Core.Entities.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("ProductBrandId")
+                        .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -129,7 +129,7 @@ namespace Infrastructure.AppContext.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("ProductBrand");
+                    b.Navigation("Category");
 
                     b.Navigation("ProductType");
                 });

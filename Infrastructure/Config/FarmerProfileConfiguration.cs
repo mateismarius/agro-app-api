@@ -9,19 +9,13 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Config
 {
-    public class ProductConfiguration : IEntityTypeConfiguration<Product>
+    public class FarmerProfileConfiguration : IEntityTypeConfiguration<FarmerProfile>
     {
-        public void Configure(EntityTypeBuilder<Product> builder)
+        public void Configure(EntityTypeBuilder<FarmerProfile> builder)
         {
             builder.Property(p => p.Id).IsRequired();
-            builder.Property(p => p.Name).IsRequired().HasMaxLength(100);
             builder.Property(p => p.Description).IsRequired();
-            builder.Property(p => p.Price).HasColumnType("decimal(18,2)");
             builder.Property(p => p.PictureUrl).IsRequired();
-            builder.HasOne(p => p.Category).WithMany()
-                .HasForeignKey(p => p.CategoryId);
-            builder.HasOne(p => p.ProductType).WithMany()
-                .HasForeignKey(p => p.ProductTypeId);
             builder.HasOne(p => p.AppUser).WithMany()
                 .HasForeignKey(p => p.UserId);
         }

@@ -19,13 +19,13 @@ namespace Core.Entities
         public ProductsWithTypesAndBrandsSpecification(ProductSpecParams productParams)
             : base(x =>
             (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) &&
-            (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) &&
+            (!productParams.BrandId.HasValue || x.CategoryId == productParams.BrandId) &&
             (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId)
             )
         {
             // Include the associated product type and brand entities in the query results.
             AddInclude(x => x.ProductType);
-            AddInclude(x => x.ProductBrand);
+            AddInclude(x => x.Category);
 
             // Order the query results by name by default.
             AddOrderBy(x => x.Name);
@@ -61,7 +61,7 @@ namespace Core.Entities
         {
             // Include the associated product type and brand entities in the query results.
             AddInclude(x => x.ProductType);
-            AddInclude(x => x.ProductBrand);
+            AddInclude(x => x.Category);
         }
     }
 

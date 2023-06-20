@@ -71,7 +71,7 @@ namespace Infrastructure.AppContext.Migrations
                 defaultValue: 0m);
 
             migrationBuilder.AddColumn<int>(
-                name: "ProductBrandId",
+                name: "CategoryId",
                 table: "Products",
                 type: "int",
                 nullable: false,
@@ -85,7 +85,7 @@ namespace Infrastructure.AppContext.Migrations
                 defaultValue: 0);
 
             migrationBuilder.CreateTable(
-                name: "ProductBrands",
+                name: "Categorys",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -96,7 +96,7 @@ namespace Infrastructure.AppContext.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductBrands", x => x.Id);
+                    table.PrimaryKey("PK_Categorys", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -115,9 +115,9 @@ namespace Infrastructure.AppContext.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Products_ProductBrandId",
+                name: "IX_Products_CategoryId",
                 table: "Products",
-                column: "ProductBrandId");
+                column: "CategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_ProductTypeId",
@@ -125,10 +125,10 @@ namespace Infrastructure.AppContext.Migrations
                 column: "ProductTypeId");
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Products_ProductBrands_ProductBrandId",
+                name: "FK_Products_Categorys_CategoryId",
                 table: "Products",
-                column: "ProductBrandId",
-                principalTable: "ProductBrands",
+                column: "CategoryId",
+                principalTable: "Categorys",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
 
@@ -144,7 +144,7 @@ namespace Infrastructure.AppContext.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Products_ProductBrands_ProductBrandId",
+                name: "FK_Products_Categorys_CategoryId",
                 table: "Products");
 
             migrationBuilder.DropForeignKey(
@@ -152,13 +152,13 @@ namespace Infrastructure.AppContext.Migrations
                 table: "Products");
 
             migrationBuilder.DropTable(
-                name: "ProductBrands");
+                name: "Categorys");
 
             migrationBuilder.DropTable(
                 name: "ProductTypes");
 
             migrationBuilder.DropIndex(
-                name: "IX_Products_ProductBrandId",
+                name: "IX_Products_CategoryId",
                 table: "Products");
 
             migrationBuilder.DropIndex(
@@ -174,7 +174,7 @@ namespace Infrastructure.AppContext.Migrations
                 table: "Products");
 
             migrationBuilder.DropColumn(
-                name: "ProductBrandId",
+                name: "CategoryId",
                 table: "Products");
 
             migrationBuilder.DropColumn(

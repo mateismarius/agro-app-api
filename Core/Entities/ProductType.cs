@@ -8,6 +8,7 @@ namespace Core.Entities
 {
     public class ProductType : BaseEntitiy
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = String.Empty;
+
     }
 }

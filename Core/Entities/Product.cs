@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Core.Entities.Identity;
 
 namespace Core.Entities
 {
@@ -14,7 +11,10 @@ namespace Core.Entities
         public string PictureUrl { get; set; } = String.Empty;
         public ProductType? ProductType { get; set; }
         public int ProductTypeId { get; set; }
-        public ProductBrand? ProductBrand { get; set; }
-        public int ProductBrandId { get; set; }
+        public Category? Category { get; set; }
+        public int CategoryId { get; set; }
+        public string? UserId { get; set; }
+        public AppUser? AppUser { get; set; }
+
     }
 }
