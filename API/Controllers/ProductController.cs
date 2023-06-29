@@ -4,6 +4,7 @@ using API.Helpers;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specifications.ProductSpecification;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers

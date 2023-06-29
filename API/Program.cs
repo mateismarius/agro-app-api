@@ -2,11 +2,10 @@ using API.Errors;
 using API.Extensions;
 using API.Helpers;
 using API.Middlewares;
-using Core.Entities.Identity;
+using Core.Entities;
 using Core.Interfaces;
 using Infrastructure;
 using Infrastructure.AppContext;
-using Infrastructure.Identity;
 using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -30,16 +29,11 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 services.AddDbContext<ApplicationContext>(options =>
                     options.UseSqlServer(connectionString));
-//Identity configurations
-var identityConnectionString = builder.Configuration.GetConnectionString("IdentityConnection")
-    ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-services.AddDbContext<AppIdentityDbContext>(options =>
-                        options.UseSqlServer(identityConnectionString));
 services.AddIdentityCore<AppUser>(opt =>
 {
     // add identity options here
 })
-            .AddEntityFrameworkStores<AppIdentityDbContext>()
+            .AddEntityFrameworkStores<ApplicationContext>()
             .AddSignInManager<SignInManager<AppUser>>();
 
   services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -88,7 +82,7 @@ var app = builder.Build();
 // migrate database when application starts
 using var scope = app.Services.CreateScope();
 var context = scope.ServiceProvider.GetRequiredService<ApplicationContext>();
-var identityContext = scope.ServiceProvider.GetRequiredService<AppIdentityDbContext>();
+var identityContext = scope.ServiceProvider.GetRequiredService<ApplicationContext>();
 var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
 var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
 try
